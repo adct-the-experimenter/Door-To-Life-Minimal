@@ -1,4 +1,4 @@
-# Door To Life
+# Door To Life Minimal
 
 This is a video game in which the player wins by finding a golden tile in a labyrinth. Avoid monsters and obstacles.
 
