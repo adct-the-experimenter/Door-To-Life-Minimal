@@ -8,8 +8,6 @@ Labyrinth::Labyrinth()
     probabilitiesGenLabyrinthNodeDimensions= {0.3, 0.4,0.0,0.0,0.0};
     
     m_game_inventory_ptr = nullptr; 
-    
-    
 }
 
 Labyrinth::~Labyrinth()
@@ -821,8 +819,6 @@ void Labyrinth::render(SDL_Renderer* gRenderer)
     //render tiles in map
     labyrinthMap.renderTiles(gRenderer,tileTextureMap);
     
-    
-    
     //render doors
     labyrinthMap.renderDoors(gRenderer);
     
@@ -898,7 +894,7 @@ void Labyrinth::freeResources()
 {
     labyrinthMap.freeTiles();
     labyrinthMap.freeDoorsAndKeys();
-    //m_enemy_inventory.freeEnemyVector();
+    m_enemy_inventory.freeEnemyVector();
 }
 
 void Labyrinth::randomlyPlaceDotInMazeNode()
@@ -1007,8 +1003,6 @@ void Labyrinth::randomlySetExitForMaze(RNGType& rngSeed)
         }
     }
 }
-
-
 
 void Labyrinth::randomlySetLabyrinthDoors(RNGType& rngSeed)
 {
